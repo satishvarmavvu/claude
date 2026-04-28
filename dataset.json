@@ -1,0 +1,11 @@
+[
+  {
+    "task": "Create a regular expression to validate AWS S3 bucket names. S3 bucket names must be between 3 and 63 characters long, contain only lowercase letters, numbers, hyphens, and periods, start and end with a letter or number, and cannot contain consecutive periods or hyphens at the start/end."
+  },
+  {
+    "task": "Write a Python function that takes an AWS CloudWatch log group name and extracts the application name and environment from it. Assume the naming convention is '/aws/lambda/app-name-environment' (e.g., '/aws/lambda/user-service-prod' should return {'app': 'user-service', 'env': 'prod'})."
+  },
+  {
+    "task": "Generate a JSON object that represents an AWS IAM policy statement allowing a user to perform read-only operations (GetObject, ListBucket) on a specific S3 bucket named 'my-data-bucket' and all its contents."
+  }
+]
