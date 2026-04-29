@@ -1,17 +1,50 @@
 [
   {
-    "task": "Parse an AWS S3 bucket name from an S3 URI to extract only the bucket name",
-    "format": "regex",
-    "solution_criteria": "Should correctly extract bucket names from S3 URIs in formats like 's3://my-bucket/key', 's3://my-bucket-123/path/to/file', and handle bucket names with hyphens and numbers"
+    "prompt_inputs": {
+      "height": "180 cm",
+      "weight": "72 kg",
+      "goal": "Marathon preparation with carbohydrate loading for maximum endurance energy",
+      "restrictions": "None"
+    },
+    "solution_criteria": [
+      "Meal plan spans full day with breakfast, lunch, dinner, and snacks",
+      "Emphasizes high carbohydrate content (60-70% of calories) for endurance fuel",
+      "Includes pre/during/post-run nutrition timing recommendations",
+      "Provides sustained energy without excessive volume or heaviness"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a high-endurance athlete (marathon runner) requiring maximum carbohydrate loading and sustained energy throughout the day"
   },
   {
-    "task": "Create a JSON configuration object for an AWS Lambda function that includes function name, runtime, role ARN, timeout, and memory allocation",
-    "format": "json",
-    "solution_criteria": "Should be valid JSON with all required Lambda configuration properties, proper data types (strings for ARN/name, integers for timeout in seconds and memory in MB), and realistic AWS values"
+    "prompt_inputs": {
+      "height": "178 cm",
+      "weight": "85 kg",
+      "goal": "Maximize strength gains and muscle recovery for weightlifting competition in 6 weeks",
+      "restrictions": "None"
+    },
+    "solution_criteria": [
+      "Meal plan covers all meals for one full day with specific times",
+      "Total daily protein is at least 1.7g per kg of body weight (145g minimum)",
+      "Includes pre-workout and post-workout meals strategically timed around training",
+      "Meals are practical and compact (no elaborate recipes)"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a strength/power athlete (weightlifter) emphasizing high protein intake and strategic meal timing around training sessions"
   },
   {
-    "task": "Write a Python function that converts an AWS CloudWatch log timestamp (Unix milliseconds) to a human-readable ISO 8601 format string",
-    "format": "python",
-    "solution_criteria": "Should correctly convert milliseconds since epoch to ISO 8601 format, handle edge cases like zero or very large timestamps, and return a properly formatted datetime string"
+    "prompt_inputs": {
+      "height": "178 cm",
+      "weight": "68 kg",
+      "goal": "High-intensity endurance cycling training with sustained energy for 3-4 hour rides",
+      "restrictions": "Vegetarian, no animal products except dairy and eggs"
+    },
+    "solution_criteria": [
+      "Meal plan contains exactly 1 day of meals (breakfast, lunch, dinner, snacks)",
+      "All foods are vegetarian and comply with stated restrictions",
+      "Includes nutrient-dense plant-based options with adequate protein, carbohydrates, and healthy fats for endurance performance",
+      "Meals are compact and practical for an athlete's schedule"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with an athlete with dietary restrictions (vegetarian endurance cyclist) requiring compact, nutrient-dense plant-based options that meet performance needs"
   }
 ]
