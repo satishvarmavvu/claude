@@ -1,14 +1,17 @@
 [
   {
-    "task": "Parse an AWS S3 bucket name from an S3 URI (e.g., 's3://my-bucket/path/to/file.txt') and extract just the bucket name",
-    "format": "regex"
+    "task": "Parse an AWS S3 bucket name from an S3 URI to extract only the bucket name",
+    "format": "regex",
+    "solution_criteria": "Should correctly extract bucket names from S3 URIs in formats like 's3://my-bucket/key', 's3://my-bucket-123/path/to/file', and handle bucket names with hyphens and numbers"
   },
   {
-    "task": "Create a JSON CloudFormation template snippet that defines an AWS Lambda function with basic properties including FunctionName, Runtime, Handler, and Role",
-    "format": "json"
+    "task": "Create a JSON configuration object for an AWS Lambda function that includes function name, runtime, role ARN, timeout, and memory allocation",
+    "format": "json",
+    "solution_criteria": "Should be valid JSON with all required Lambda configuration properties, proper data types (strings for ARN/name, integers for timeout in seconds and memory in MB), and realistic AWS values"
   },
   {
-    "task": "Write a Python function that takes an AWS IAM policy JSON string and returns a list of all the Action values specified in the policy",
-    "format": "python"
+    "task": "Write a Python function that converts an AWS CloudWatch log timestamp (Unix milliseconds) to a human-readable ISO 8601 format string",
+    "format": "python",
+    "solution_criteria": "Should correctly convert milliseconds since epoch to ISO 8601 format, handle edge cases like zero or very large timestamps, and return a properly formatted datetime string"
   }
 ]
