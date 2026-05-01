@@ -1,5 +1,5 @@
 import math
-from main import calculate_pi
+from test.main import calculate_pi
 
 
 def test_calculate_pi():
